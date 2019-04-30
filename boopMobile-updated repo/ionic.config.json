@@ -1,0 +1,7 @@
+{
+  "name": "boopM",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
