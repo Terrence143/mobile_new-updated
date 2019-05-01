@@ -7,29 +7,35 @@
 <ion-content padding>
   <form #form="ngForm" (ngSubmit)="register(form)" method="post">
     <ion-item>
-        <ion-label position="floating">username</ion-label>
-        <ion-input ngModel name="username"></ion-input>
+        <ion-label position="floating">First Name</ion-label>
+        <ion-input ngModel name="firstName"></ion-input>
     </ion-item>
   
     <ion-item>
-      <ion-label position="floating">public name</ion-label>
-      <ion-input ngModel name="publicName"></ion-input>
+      <ion-label position="floating">Last Name</ion-label>
+      <ion-input ngModel name="lastName"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-label position="floating">contact number</ion-label>
-      <ion-input ngModel name="contact"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-label position="floating">email</ion-label>
+      <ion-label position="floating">Email</ion-label>
       <ion-input type="email" ngModel name="email"></ion-input>
     </ion-item>
   
     <ion-item>
-      <ion-label position="floating">password</ion-label>
+      <ion-label position="floating">Username</ion-label>
+      <ion-input ngModel name="username"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Contact No</ion-label>
+      <ion-input ngModel name="contactNo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
       <ion-input type="password" ngModel name="password"></ion-input>
     </ion-item>
+    
     <ion-button type="submit" expand="block" fill="outline" color="primary" >Register</ion-button>
   </form>
   <p text-center>Already have a account?</p>

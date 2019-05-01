@@ -30,7 +30,7 @@ export class RegisterPage implements OnInit {
     return await loginModal.present();
   }
   register(form: NgForm) {
-    this.authService.register(form.value.username, form.value.public_name, form.value.contact, form.value.email,
+    this.authService.register(form.value.firstName, form.value.lastName, form.value.email, form.value.username, form.value.contactNo,
       form.value.password).subscribe(
       data => {
         this.authService.login(form.value.email, form.value.password).subscribe(

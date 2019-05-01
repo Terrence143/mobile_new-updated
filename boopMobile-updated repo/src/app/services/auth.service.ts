@@ -39,10 +39,12 @@ export class AuthService {
       }),
     );
   }
-  register(username: String, publicName: String, contact: String, email: String, password: String) {
+  register(firstName: String, lastName: String, email: String, username: String, contactNo: String,
+    password: String) {
     return this.http.post(this.env.API_URL + 'user/',
-      {username: username, publicName: publicName, contact: contact, email: email, password: password}
-    )
+      {firstName: firstName, lastName: lastName, email: email, username: username, contactNo: contactNo,
+      password: password}
+    );
   }
   logout() {
     const headers = new HttpHeaders({
