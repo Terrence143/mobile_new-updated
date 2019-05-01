@@ -12,7 +12,11 @@ const routes: Routes = [
   { path: 'register', loadChildren: './pages/auth/register/register.module#RegisterPageModule' },
   
   { path: 'dashboard', loadChildren: './pages/dashboard/dashboard.module#DashboardPageModule', canActivate: [AuthGuard] },
-  { path: 'home', loadChildren: './home/home.module#HomePageModule', canActivate: [AuthGuard] },  { path: 'pets', loadChildren: './pets/pets.module#PetsPageModule' },
+  { path: 'home', loadChildren: './home/home.module#HomePageModule', canActivate: [AuthGuard] },  { path: 'pets', loadChildren: './pages/pets/pets.module#PetsPageModule' },
+  { path: 'petreg', loadChildren: './pages/pets/petreg/petreg.module#PetregPageModule' },
+  { path: 'petupdate', loadChildren: './pages/pets/petupdate/petupdate.module#PetupdatePageModule' },
+
+
 
   //{ path: 'list', loadChildren: './list/list.module#ListPageModule', canActivate: [AuthGuard] },
   // { path: 'home', loadChildren: './home/home.module#HomePageModule' },

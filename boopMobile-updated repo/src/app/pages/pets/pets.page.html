@@ -1,10 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Muh Pets</ion-title>
+    <ion-row class="topbar">
+      <div class="titlecont">
+        <ion-title class="title">My Pets</ion-title>
+      </div>
+      <div class="buttoncont">
+        <ion-button class="btn" slot="end"><ion-icon name="arrow-back"></ion-icon></ion-button>
+      </div>
+    </ion-row>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <ion-row style="justify-content: center">
+  <ion-row>
     <ion-card class="pet-card">
       <ion-item>
         <div class="avatar-cont">
@@ -47,7 +54,7 @@
     </ion-card>
   </ion-row>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button>
+    <ion-fab-button (click)="register()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>

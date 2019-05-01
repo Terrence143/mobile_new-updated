@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button color="light" (click)="dismissRegister()">Close</ion-button>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <form #form="ngForm" (ngSubmit)="register(form)" method="post">
+    <ion-item>
+      <button ion-button (click)="uploadFile()">Upload File</button>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Pet Name</ion-label>
+      <ion-input ngModel name="PName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Specie</ion-label>
+      <ion-input ngModel name="PSpec"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Breed</ion-label>
+      <ion-input ngModel name="PBreed"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Age</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="PAge"></ion-datetime>
+    </ion-item>
+
+    <ion-button type="submit" expand="full" color="danger">Register</ion-button>
+  </form>
+</ion-content>
