@@ -1,9 +1,33 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>petupdate</ion-title>
+    <ion-button color="light" (click)="dismissLogin()">Close</ion-button>
+    <ion-title>Edit</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content padding>
+  <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input ngModel type="petname" name="PName"></ion-input>
+    </ion-item>
 
-<ion-content>
+    <ion-item>
+      <ion-label position="floating">Specie</ion-label>
+      <ion-input ngModel type="species" name="PSpecie"></ion-input>
+    </ion-item>
 
+    <ion-item>
+      <ion-label position="floating">Breed</ion-label>
+      <ion-input ngModel type="breed" name="PBreed"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Age</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="PAge"></ion-datetime>
+    </ion-item>
+
+    <ion-button type="submit" expand="full" color="primary">Update Pet</ion-button>
+  </form>
+  <p text-center>Or</p>
+  <ion-button expand="full" color="danger" (click)="registerModal()">Delete Pet</ion-button>
 </ion-content>

@@ -5,7 +5,9 @@
         <ion-title class="title">My Pets</ion-title>
       </div>
       <div class="buttoncont">
-        <ion-button class="btn" slot="end"><ion-icon name="arrow-back"></ion-icon></ion-button>
+        <ion-button class="btn" slot="end" fill="clear">
+          <ion-icon name="arrow-back" color="light"></ion-icon>
+        </ion-button>
       </div>
     </ion-row>
   </ion-toolbar>
@@ -25,8 +27,8 @@
           <ion-label class="bio">Smelly poo poos</ion-label>
         </div>
         <div class="div-settings">
-          <ion-button class="btn" color="transparent" border="none">
-            <img src="/assets/more.png" class="img">
+          <ion-button color="dark" (click)="login()">
+            Edit
           </ion-button>
         </div>
       </ion-item>
@@ -46,17 +48,20 @@
           <ion-label class="bio">No Tail</ion-label>
         </div>
         <div class="div-settings">
-          <ion-button class="btn" color="transparent" border="none">
-            <img src="/assets/more.png" class="img">
+          <ion-button color="dark" (click)="login()">
+            Edit
           </ion-button>
         </div>
       </ion-item>
     </ion-card>
   </ion-row>
+
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button (click)="register()">
+    <ion-fab-button color="tertiary" (click)="register()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>
+
 </ion-content>
 
+<!--<ion-button color="none" expand="block" fill="outline" color="primary" (click)="register()">Signup </ion-button>-->

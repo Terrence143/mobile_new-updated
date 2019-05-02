@@ -1,29 +1,43 @@
+$color1: #daf7a6; $color2: #ffc300;
+
+ion-toolbar{
+    --background: #00002A;
+}
+
 .topbar{
     width: 100%;
     margin: 0 auto;
 
     .titlecont{
-        width: 70%;
+        width: 75%;
         height: 100%;
         margin: auto;
 
         .title{
             margin: 0 auto;
             font-size: 7vw;
+            color: #FFF;
         }
     }
 
     .buttoncont{
-        width: 30%;
+        width: 25%;
         height: 100%;
         margin: 0 auto;
-        padding-left: 45px;
+        padding-left: 5vw;
 
         .btn{
             --box-shadow: none;
+            height: 10vw;
+            width: 10vh;
         }
     }
 }
+
+ion-content {
+    --background: #dfdfe4;
+}
+
 
 .pet-card{
 
@@ -31,6 +45,7 @@
     max-height: 20%;
     border-radius: 10px;
     margin: 10px 15px;
+
 
     .avatar-cont{
         width: 30%;
@@ -44,7 +59,7 @@
     }
 
     .div-details{
-        width: 55%;
+        width: 50%;
 
         .name{
             font-size: 7vw;
@@ -60,7 +75,7 @@
     }
 
     .div-settings{
-        width: 15%;
+        width: 20%;
         align-content: end;
 
         .btn{

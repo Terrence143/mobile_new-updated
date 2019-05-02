@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
+import { RegisterPet } from '../pets/petreg/petreg.page';
+import { UpdatePet } from '../pets/petupdate/petupdate.page';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -21,6 +23,7 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [PetsPage]
+  declarations: [PetsPage, RegisterPet, UpdatePet],
+  entryComponents: [RegisterPet, UpdatePet]
 })
 export class PetsPageModule {}
